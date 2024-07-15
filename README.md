@@ -1,4 +1,4 @@
-# realtime-issue-tracker and output based questions and answer
+# realtime-issue-tracker and output-based questions and answer
 A real-time issue was faced while  developing the app and with the solution.  
 
 # template 
