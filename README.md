@@ -19,6 +19,11 @@ let message = 'Hello world';
 alert(message);
 ```
 
+### Ordered
+
+1. Item 1
+2. Item 2
+
 ## Lists
 
 - [ ] What is Angular and why is it used?
