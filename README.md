@@ -47,5 +47,19 @@ alert(message);
 <select (change)="onChange($any($event.target).value)">
 ```
 
+## Clamp Snippet for width and font size 
 
+```css
+
+.sidebar {
+  /* 10rem min , 30vw perfer, 20rem max */
+  width: clamp(10rem, 30vw, 20rem);
+}
+
+.sidebar .sidebar-header-text {
+  /* responsive font size */
+  font-size: clamp(1.5rem, 4.5vw, 2.5rem);
+}
+
+```
 
