@@ -129,9 +129,11 @@ function App() {
 export default App;
 ```
 
-## Most important : useEffect run twice for <React.StrictMode> and api call also happen twice
+## Most important: useEffect run twice for <React.StrictMode> and API call also happen twice
 `important fix for React.StrictMode twice api call`
 `fix for twice api call` `fix api call React.StrictMode`
+
+`REFERENCE Video` `https://www.youtube.com/watch?v=81faZzp18NM`
 
 ```jsx
 // Filename : useFetchData.jsx
