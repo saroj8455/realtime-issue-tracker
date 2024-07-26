@@ -63,3 +63,35 @@ alert(message);
 
 ```
 
+## React API call in useEffect quick snippets.
+
+```jsx
+
+  const [data, setData] = useState(null);
+  const [user, setUser] = useState({});
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch(
+          'https://jsonplaceholder.typicode.com/posts/-1'
+        );
+        if (!response.ok) {
+          setError("Something went wrongs");
+          return;
+        }
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (error) {
+        setError(error);
+        
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, []);
+```
