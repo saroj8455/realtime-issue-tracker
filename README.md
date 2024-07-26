@@ -96,3 +96,54 @@ alert(message);
     fetchData();
   }, []);
 ```
+
+## Handel API call with loading, error, and data in react.
+
+`Reactjs API call`, `quick snippets for API call`
+
+```jsx
+// Filename : App.jsx
+import { useEffect, useState } from 'react';
+import { useFetchData } from './hooks/useFetchData';
+import { USERAPI } from './common/api';
+
+function App() {
+  const { loading, error, data: user } = useFetchData(USERAPI);
+  const [users, setUsers] = useState({});
+
+  useEffect(() => {
+    console.log('useEffect run');
+  }, []);
+
+  return (
+    <>
+      <div className='flex flex-col gap-2 text-white min-h-screen bg-blue-600 justify-center items-center text-center'>
+        {loading && <div className='text-4xl'>Loading...Please wait!.</div>}
+        {error && <div className='text-4xl'>Error: {error}</div>}
+        {user && <p className='text-4xl'>{user.title}</p>}
+      </div>
+    </>
+  );
+}
+
+export default App;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
