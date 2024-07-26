@@ -18,6 +18,7 @@ A real-time issue was faced while  developing the app and with the solution.
 let message = 'Hello world';
 alert(message);
 ```
+## Highlight code `highlight code`
 
 ### Ordered
 
